@@ -18,8 +18,6 @@ public class AppTest {
         numbers = Assertions.assertThrows(NumberFormatException.class, () -> {
             App.main(new String[]{"10", "zzz"});
         });
-        assertEquals("For input string: \"zzz\"", numbers.getMessage());
+        assertEquals("For input string: zzz", numbers.getMessage());
     }
-
-
 }
